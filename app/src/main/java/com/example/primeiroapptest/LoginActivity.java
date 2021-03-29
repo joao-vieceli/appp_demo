@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText txtUser, txtSenha;
 
     Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,11 +27,8 @@ public class LoginActivity extends AppCompatActivity {
         context = LoginActivity.this;
 
         btnLogin = findViewById(R.id.btnLogar);
-        txtUser = findViewById(R.id.lblUser);
-        txtSenha = findViewById(R.id.lblSenha);
-
-
-
+        txtUser = findViewById(R.id.txtUser);
+        txtSenha = findViewById(R.id.txtSenha);
 
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -39,12 +38,13 @@ public class LoginActivity extends AppCompatActivity {
                 String user = txtUser.getText().toString();
                 String password = txtSenha.getText().toString();
 
-                if(user.equals("Joao") && password.equals("123")){
+                if(user.equals("admin") && password.equals("admin")){
                     Intent tela = new Intent(context, MenuActivity.class);
                     startActivity(tela);
                     finish();
 
                 }else{
+
                     exibirToast("Usuário ou Senha incorretos");
                 }
 
@@ -56,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(context, texto, Toast.LENGTH_LONG).show();
 
         }catch (Exception ex){
+            Log.e("ERROR", ex.getMessage());
 
         }
     }

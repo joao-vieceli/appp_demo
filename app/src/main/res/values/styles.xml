@@ -2,18 +2,26 @@
 <resources>
     <style name="BotoesPadrao" parent="TextAppearance.AppCompat.Button">
         <item name="android:layout_margin">5dp</item>
-        <item name="android:textColor">@color/purple_500</item>
-        <item name="android:textStyle">italic</item>
-        <item name="android:backgroundTint">@color/cardview_shadow_end_color</item>
+        <item name="android:textColor">@color/blueverdeado</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:backgroundTint">@color/white</item>
         <item name="android:padding">10dp</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">25sp</item>
     </style>
 
     <style name="Titulos" parent="Widget.AppCompat.TextView">
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
-
+        <item name="android:textColor">@color/white</item>
     </style>
+
+
+
+
+
+
+
+
 
     <style name="TituloB" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">22sp</item>
