@@ -21,7 +21,7 @@
             android:layout_below="@+id/login_title"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="85dp"
             android:background="#fff"
             android:elevation="4dp"
             android:orientation="vertical"
@@ -42,7 +42,7 @@
                     android:drawableLeft="@android:drawable/sym_action_email"
                     android:drawableTint="@color/black"
                     android:ems="20"
-                    android:hint="Usuário"
+                    android:hint="@string/hint_name"
                     android:inputType="text"/>
 
 
@@ -55,7 +55,7 @@
                     android:singleLine="true"
                     android:layout_marginTop="16dp"
                     android:ems="20"
-                    android:hint="Senha"
+                    android:hint="@string/hint_senha"
                     android:inputType="textPassword"/>
 
 

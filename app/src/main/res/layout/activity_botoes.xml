@@ -16,7 +16,7 @@
         android:text="BOTÕES"
         android:textSize="35dp"
         android:textAlignment="center"
-        style="@style/TituloB"
+        style="@style/Titulos"
         />
 
     <LinearLayout
