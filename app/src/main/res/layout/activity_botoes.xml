@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@mipmap/ic_launcher"
-    tools:context=".MenuActivity">
+    tools:context=".view.MenucActivity">
 
     <TextView
         android:layout_width="match_parent"

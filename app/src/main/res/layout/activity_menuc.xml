@@ -5,6 +5,7 @@
     android:background="@color/blueverdeado"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
+
     <TextView
         android:id="@+id/lblUsuario"
         android:layout_width="fill_parent"
@@ -36,7 +37,7 @@
             <Button
                 android:id="@+id/btnBotoes"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="Tela De Botões"
                 android:layout_gravity="center"
                 style="@style/BotoesPadrao"/>
@@ -44,8 +45,16 @@
             <Button
                 android:id="@+id/btnToast"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="Aperte"
+                style="@style/BotoesPadrao"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnPix"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Pix"
                 style="@style/BotoesPadrao"
                 android:layout_gravity="center"/>
 
